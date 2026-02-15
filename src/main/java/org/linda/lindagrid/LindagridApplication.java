@@ -1,4 +1,4 @@
-package org.tron.trongrid;
+package org.linda.lindagrid;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
@@ -21,10 +21,10 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 @SpringBootApplication
-public class TrongridApplication {
+public class LindagridApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(TrongridApplication.class, args);
+    SpringApplication.run(LindagridApplication.class, args);
   }
 
   @Bean

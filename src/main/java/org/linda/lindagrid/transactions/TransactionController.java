@@ -1,4 +1,4 @@
-package org.tron.trongrid.transactions;
+package org.linda.lindagrid.transactions;
 
 import com.alibaba.fastjson.JSONObject;
 import java.util.HashMap;
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.tron.trongrid.QueryFactory;
-import org.tron.trongrid.TransactionTriggerEntity;
+import org.linda.lindagrid.QueryFactory;
+import org.linda.lindagrid.TransactionTriggerEntity;
 
 @RestController
 @Component
-@PropertySource("classpath:tronscan.properties")
+@PropertySource("classpath:lindascan.properties")
 public class TransactionController {
   @Value("${url.transaction}")
   private String url;

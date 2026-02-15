@@ -1,4 +1,4 @@
-package org.tron.trongrid;
+package org.linda.lindagrid;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;

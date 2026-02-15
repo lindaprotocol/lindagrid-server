@@ -1,4 +1,4 @@
-package org.tron.trongrid;
+package org.linda.lindagrid;
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
@@ -192,7 +192,7 @@ public class EventLogController {
   }
 
 
-  @RequestMapping(method = RequestMethod.GET, value = "/trc20/getholder/{contractAddress}")
+  @RequestMapping(method = RequestMethod.GET, value = "/lrc20/getholder/{contractAddress}")
   public  List<String> totalholder(
       @PathVariable String contractAddress
   ) {

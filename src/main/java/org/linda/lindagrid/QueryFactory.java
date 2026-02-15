@@ -1,4 +1,4 @@
-package org.tron.trongrid;
+package org.linda.lindagrid;
 
 import java.util.regex.Pattern;
 import org.springframework.data.domain.PageRequest;
@@ -69,9 +69,9 @@ public class QueryFactory {
     this.query.addCriteria(Criteria.where("eventSignature").is(pattern).and("contractAddress").is(address));
   }
 
-  public void findAllTransferByTransactionId(String trxId) {
+  public void findAllTransferByTransactionId(String lindId) {
     Pattern pattern =Pattern.compile("^.*" + "Transfer" + ".*$",Pattern.CASE_INSENSITIVE);
-    this.query.addCriteria(Criteria.where("eventSignature").is(pattern).and("transactionId").is(trxId));
+    this.query.addCriteria(Criteria.where("eventSignature").is(pattern).and("transactionId").is(lindId));
   }
 
 

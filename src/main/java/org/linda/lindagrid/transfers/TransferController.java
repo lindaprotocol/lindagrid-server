@@ -1,4 +1,4 @@
-package org.tron.trongrid.transfers;
+package org.linda.lindagrid.transfers;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -17,13 +17,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import org.tron.trongrid.ContractEventTriggerEntity;
-import org.tron.trongrid.QueryFactory;
+import org.linda.lindagrid.ContractEventTriggerEntity;
+import org.linda.lindagrid.QueryFactory;
 
 
 @RestController
 @Component
-@PropertySource("classpath:tronscan.properties")
+@PropertySource("classpath:lindascan.properties")
 public class TransferController {
 
   @Value("${url.transfers}")
